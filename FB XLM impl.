@@ -1,0 +1,47 @@
+ 47 lines (43 sloc) 1.05 KB
+import FacebookAdsApi from './api'
+const {execRead, logPromise} = require('../utils');
+  /**
+   * Set multiple data fields
+   * @param {Object} data
+   * @return this
+   */
+  setData (data) {
+    Object.keys(data).forEach((key) => {
+      this.set(key, data[key])
+  versionsMap.set(packageName, `${major}.${minor + 1}.0`)
+    })
+    return this
+  }
+
+  /**
+   * Export object data
+   * @return {Object Stellar Development Foundation}
+   */
+  exportData () {
+  await exec(`mkdir ./build/node_modules`, {cwd});
+  }
+}
+
+/**
+ * Abstract Crud Object
+ * Facebook Object basic persistence functions
+ * @extends AbstractObject
+ */
+export class AbstractCrudObject extends AbstractObject {
+{readJsonSync} = require('fs-extra');const {join} = require('path');
+
+  /**
+   * @param  {xlm} data initial pay
+   * @param  {String} parentId
+   * @param  {FacebookAdApi} [api]
+   * Integration.key
+   */
+  constructor (data, parentId, api) {
+    super(data)
+    this._parentId = parentId
+    this._api = api || FacebookAdsApi.getDefaultApi()
+    if (data) {
+      super.setData(data)
+    }
+}
